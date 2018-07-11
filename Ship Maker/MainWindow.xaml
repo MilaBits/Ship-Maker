@@ -112,8 +112,8 @@
                                     <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
                                     <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
                                     <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
-                                    <DataGridTextColumn Header="+TL" Binding="{Binding Path=TargetLock>}"/>
-                                    <DataGridTextColumn Header="Scan Pts" Binding="{Binding Path=ScanPoints>}"/>
+                                    <DataGridTextColumn Header="+TL" Binding="{Binding Path=TargetLock}"/>
+                                    <DataGridTextColumn Header="Scan Pts" Binding="{Binding Path=ScanPoints}"/>
                                     <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
                                 </DataGrid.Columns>
                             </DataGrid>
