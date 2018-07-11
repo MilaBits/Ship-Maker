@@ -1,0 +1,9 @@
+﻿<Application x:Class="Ship_Maker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Ship_Maker"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="ResourcesDark.xaml"/>         
+    </Application.Resources>
+</Application>

@@ -1,0 +1,188 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ship_Maker"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock" xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid" x:Class="Ship_Maker.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="613.781" Width="644.918">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="265">
+            <Grid>
+                <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="57,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" FontWeight="Normal"/>
+                <Label Content="Tier" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,31,0,0"/>
+                <xctk:IntegerUpDown HorizontalAlignment="Left" Margin="57,35,0,0" VerticalAlignment="Top" Width="49" Height="23" FontWeight="Normal"/>
+                <Label Content="BP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,31,0,0" ToolTip="Build Points"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="155,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" ToolTip="Build Points" FontWeight="Normal"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Frame" Height="244" Margin="280,10,8,0" VerticalAlignment="Top">
+            <Grid>
+                <ComboBox Margin="0,-30,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+            </Grid>
+        </GroupBox>
+        <xcad:DropDownButton Content="DropDownButton" HorizontalAlignment="Left" Margin="457,-56,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Equipment" Margin="10,259,8,9">
+            <Grid>
+                <TabControl>
+                    <TabItem Header="Power Cores">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgPowerCores" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="+SEA" Binding="{Binding Path=SEA}"/>
+                                    <DataGridTextColumn Header="ST" Binding="{Binding Path=StrainThreshold}"/>
+                                    <DataGridTextColumn Header="SR" Binding="{Binding Path=StrainReduction}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Armor" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgArmor" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="SP" Binding="{Binding Path=ShieldPoints}"/>
+                                    <DataGridTextColumn Header="SAC" Binding="{Binding Path=ShieldAC}"/>
+                                    <DataGridTextColumn Header="SR" Binding="{Binding Path=ShieldRegen}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="___No_Name_" Header="Shields" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgShields" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="SP" Binding="{Binding Path=ShieldPoints}"/>
+                                    <DataGridTextColumn Header="SAC" Binding="{Binding Path=ShieldAC}"/>
+                                    <DataGridTextColumn Header="SR" Binding="{Binding Path=ShieldRegen}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Thrusters" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgThrusters" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="MR" Binding="{Binding Path=ManeuverabilityRating}"/>
+                                    <DataGridTextColumn Header="ER" Binding="{Binding Path=EngineRating}"/>
+                                    <DataGridTextColumn Header="Max Speed" Binding="{Binding Path=MaxSpeed}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Computers" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgComputers" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="Bonus" Binding="{Binding Path=Bonus}"/>
+                                    <DataGridTextColumn Header="Multiplier" Binding="{Binding Path=Multiplier}"/>
+                                    <DataGridTextColumn Header="Nodes" Binding="{Binding Path=Nodes}"/>
+                                    <DataGridTextColumn Header="PCU" Binding="{Binding Path=PCU}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Transponders" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgTransponders" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="+TL" Binding="{Binding Path=TargetLock>}"/>
+                                    <DataGridTextColumn Header="Scan Pts" Binding="{Binding Path=ScanPoints>}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Weapons" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgWeapons" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="Damage" Binding="{Binding Path=Damage}"/>
+                                    <DataGridTextColumn Header="Damage Type" Binding="{Binding Path=DamageType}"/>
+                                    <DataGridTextColumn Header="Weight Class" Binding="{Binding Path=WeightClass}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Deployables" Margin="-2,-2,-2,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgDeployables" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="BP" Binding="{Binding Path=BPCost}"/>
+                                    <DataGridTextColumn Header="SEA" Binding="{Binding Path=SEACost}"/>
+                                    <DataGridTextColumn Header="Damage" Binding="{Binding Path=Damage}"/>
+                                    <DataGridTextColumn Header="Damage Type" Binding="{Binding Path=DamageType}"/>
+                                    <DataGridTextColumn Header="Weight Class" Binding="{Binding Path=WeightClass}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Unique Systems" Margin="-2,-2,1,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgUniqueSystems" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Unique Weapons" Margin="-2,-2,37,0">
+                        <Grid Background="#FFE5E5E5">
+                            <DataGrid x:Name="dgUniqueWeapons" AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                                    <DataGridTextColumn Header="Rules" Binding="{Binding Path=Rules}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Available Points" HorizontalAlignment="Left" Height="100" Margin="10,115,0,0" VerticalAlignment="Top" Width="265">
+            <Grid>
+                <Label Content="SEA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,31,0,0"/>
+                <Label Content="BP" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.68,-0.115"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="57,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" ToolTip="Build Points" Text="15" FontWeight="Bold" IsEnabled="False" Background="#FF6B6C74" Foreground="Black" BorderBrush="#FF575757" FontStyle="Italic"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="57,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" ToolTip="Build Points" Text="50" FontWeight="Bold" IsEnabled="False" Background="#FF6B6C74" Foreground="Black" BorderBrush="#FF575757" FontStyle="Italic"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="155,3,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" ToolTip="Build Points" Text="50" FontWeight="Bold" IsEnabled="False" Background="#FF6B6C74" Foreground="Black" BorderBrush="#FF575757" FontStyle="Italic"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="155,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" ToolTip="Build Points" Text="150" FontWeight="Bold" IsEnabled="False" Background="#FF6B6C74" Foreground="Black" BorderBrush="#FF575757" FontStyle="Italic"/>
+                <Label Content="of" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.68,-0.115" Margin="129,1,0,0" FontWeight="Normal"/>
+                <Label Content="of" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.68,-0.115" Margin="129,31,0,0" FontWeight="Normal"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
