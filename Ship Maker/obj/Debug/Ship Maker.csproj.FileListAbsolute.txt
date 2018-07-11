@@ -1,0 +1,36 @@
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Ship_Maker.exe.config
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Ship_Maker.exe
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Ship_Maker.pdb
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Xceed.Wpf.AvalonDock.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Xceed.Wpf.DataGrid.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Xceed.Wpf.Toolkit.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\ResourcesDark.baml
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\MainWindow.g.cs
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\App.g.cs
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship_Maker_MarkupCompile.cache
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship_Maker_MarkupCompile.lref
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\App.baml
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\MainWindow.baml
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship_Maker.g.resources
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship_Maker.Properties.Resources.resources
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship Maker.csproj.GenerateResource.cache
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship_Maker.exe
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship_Maker.pdb
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship Maker.csprojResolveAssemblyReference.cache
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Newtonsoft.Json.dll
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\bin\Debug\Newtonsoft.Json.xml
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship Maker.csproj.CoreCompileInputs.cache
+K:\Documents\Projects\C# Projects\Ship Maker\Ship Maker\obj\Debug\Ship Maker.csproj.CopyComplete
