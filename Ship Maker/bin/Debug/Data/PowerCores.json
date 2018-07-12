@@ -1,1 +1,19 @@
-[{"Name":null,"BPCost":0,"SEACost":0,"SEA":0,"StrainThreshold":0,"StrainReduction":0,"Rules":null}]
+[
+    {
+        "Name": "WP Tempest",
+        "BPCost": 4,
+        "SEACost": 0,
+        "SEA": 50,
+        "StrainThreshold": 3,
+        "StrainReduction": "Fair",
+        "Rules": null
+    },{
+        "Name": "LE Basic",
+        "BPCost": 5,
+        "SEACost": 0,
+        "SEA": 75,
+        "StrainThreshold": 3,
+        "StrainReduction": "Good",
+        "Rules": null
+    }
+]

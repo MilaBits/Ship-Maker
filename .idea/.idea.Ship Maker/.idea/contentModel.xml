@@ -10,6 +10,7 @@
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Logic" t="Include">
+          <e p="ExtensionMethods.cs" t="Include" />
           <e p="MainLogic.cs" t="Include" />
         </e>
         <e p="MainWindow.xaml" t="Include" />
@@ -21,17 +22,21 @@
           <e p="Deployable.cs" t="Include" />
           <e p="Enums" t="Include">
             <e p="DamageType.cs" t="Include" />
+            <e p="Role.cs" t="Include" />
+            <e p="SeatType.cs" t="Include" />
             <e p="SizeClass.cs" t="Include" />
-            <e p="Transponder.cs" t="Include" />
+            <e p="StrainReduction.cs" t="Include" />
             <e p="WeightClass.cs" t="Include" />
           </e>
           <e p="Equipment.cs" t="Include" />
           <e p="Frame.cs" t="Include" />
           <e p="PowerCore.cs" t="Include" />
           <e p="PoweredEquipment.cs" t="Include" />
+          <e p="Seat.cs" t="Include" />
           <e p="SelectionData.cs" t="Include" />
           <e p="Shield.cs" t="Include" />
           <e p="Thrusters.cs" t="Include" />
+          <e p="Transponder.cs" t="Include" />
           <e p="UniqueSystem.cs" t="Include" />
           <e p="UniqueWeapon.cs" t="Include" />
           <e p="Weapon.cs" t="Include" />
@@ -39,6 +44,7 @@
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
+          <e p="Annotations.cs" t="Include" />
           <e p="AssemblyInfo.cs" t="Include" />
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />

@@ -1,1 +1,11 @@
-[{"HPMod":0,"HullAC":0,"DamageReduction":0,"Name":null}]
+[
+    {
+        "HPMod": 1,
+        "HullAC": 1,
+        "DamageReduction": 0,
+        "Name": "WP 1",
+        "BPCost": 1,
+        "SEACost": 0,
+        "Rules": "Thorns"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "Name": "Racer",
+        "Outline": null,
+        "Size": "Tiny",
+        "MaxCrew": 1,
+        "BPCost": 4
+    },{
+        "Name": "Interceptor",
+        "Outline": null,
+        "Size": "Tiny",
+        "MaxCrew": 1,
+        "BPCost": 6
+    },{
+        "Name": "Fighter",
+        "Outline": null,
+        "Size": "Tiny",
+        "MaxCrew": 2,
+        "BPCost": 8
+    },{
+        "Name": "Shuttle",
+        "Outline": null,
+        "Size": "Small",
+        "MaxCrew": 4,
+        "BPCost": 6
+    }
+]

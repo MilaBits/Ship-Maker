@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using Ship_Maker.Models.Enums;
 
 namespace Ship_Maker.Models {
     public class PowerCore : PoweredEquipment {
@@ -13,6 +9,6 @@ namespace Ship_Maker.Models {
         [JsonProperty(Order = 11)]
         public int StrainThreshold { get; private set; }
         [JsonProperty(Order = 12)]
-        public int StrainReduction { get; private set; }
+        public StrainReduction StrainReduction { get; private set; }
     }
 }

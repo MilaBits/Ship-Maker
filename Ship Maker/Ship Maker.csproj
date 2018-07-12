@@ -80,6 +80,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Logic\ExtensionMethods.cs" />
     <Compile Include="Logic\MainLogic.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -96,19 +97,24 @@
     <Compile Include="Models\Data.cs" />
     <Compile Include="Models\Deployable.cs" />
     <Compile Include="Models\Enums\DamageType.cs" />
+    <Compile Include="Models\Enums\Role.cs" />
+    <Compile Include="Models\Enums\SeatType.cs" />
     <Compile Include="Models\Enums\SizeClass.cs" />
-    <Compile Include="Models\Enums\Transponder.cs" />
+    <Compile Include="Models\Enums\StrainReduction.cs" />
     <Compile Include="Models\Enums\WeightClass.cs" />
     <Compile Include="Models\Equipment.cs" />
     <Compile Include="Models\Frame.cs" />
     <Compile Include="Models\PowerCore.cs" />
     <Compile Include="Models\PoweredEquipment.cs" />
+    <Compile Include="Models\Seat.cs" />
     <Compile Include="Models\SelectionData.cs" />
     <Compile Include="Models\Shield.cs" />
     <Compile Include="Models\Thrusters.cs" />
+    <Compile Include="Models\Transponder.cs" />
     <Compile Include="Models\UniqueSystem.cs" />
     <Compile Include="Models\UniqueWeapon.cs" />
     <Compile Include="Models\Weapon.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
